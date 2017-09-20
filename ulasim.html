@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/topbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+	<link rel="stylesheet" type="text/css" href="css/ulasim.css" />
+    <style>
+    </style>
+</head>
+	<body>  
+        <div class="container">
+            <header>
+				<p class="codrops-demos">
+					<a href="index.php">Ana Sayfa</a>
+					<a href="hakkimizda.html">Hakkımızda</a>
+					<a href="galeri.html">Galeri</a>
+					<a href="odalar.html">Odalar &amp; Fiyatlar</a>
+					<a href="ulasim.html" class="current-demo">Ulaşım &amp; Rezervasyon</a>
+					<a href="yorumlar.php">Yorumlar</a>
+					</p>
+            </header>
+        </div>
+		
+		<aside id="sticky-social">
+			<ul>
+				<li><a href="https://www.facebook.com/%C5%9EU%C5%9EU-Pansiyon-215781178579343/?fref=ts" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
+        		<li><a href="https://www.instagram.com/conradhotels/" class="entypo-instagrem" target="_blank"><span>Instagram</span></a></li>
+				<li><a href="http://www.neredekal.com/susunun-yeri-apart-pansiyon/" class="entypo-neredekal" target="_blank"><span>Neredekal</span><img src="../imgsocial/indir (2).png" /" alt="neredekal" height="35" width="35" /></a></li>
+			</ul>
+		</aside>
+
+		
+		
+		
+		<div id="googlemap">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD_Iy1JOs3Kw-yG5i4TEOz7v9Yc2rxOs0&callback=initMap"></script>
+			<div id='gmap_canvas' style='height:440px;width:700px;'>
+			</div>
+			<script type='text/javascript'>
+				function init_map()
+				{
+					var myOptions = {zoom:11,center:new google.maps.LatLng(38.349295, 26.640591),mapTypeId: google.maps.MapTypeId.ROADMAP};
+					map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+					
+					marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(38.349295, 26.640591), animation: google.maps.Animation.BOUNCE});
+					marker.setMap(map);
+				
+					var infowindow = new google.maps.InfoWindow({content:"ŞUŞU'YA BEKLİYORUZ!!!"});
+					google.maps.event.addListener(
+						marker,
+						'click', 
+						function(){infowindow.open(map,marker);}
+					);
+					
+					google.maps.event.addListener(
+						marker, 
+						'click', 
+						function() {map.setZoom(15); map.setCenter(marker.getPosition());}
+					);
+					
+				}
+				google.maps.event.addDomListener(window, 'load', init_map);
+			</script>
+		</div>
+
+		<br>
+		<div class="outer"><p><b>İletişim</b></p><br>
+		</div>
+		<div class="inner">
+			<h1>
+			<b>Adres : </b>Gülbahçe Mahallesi 12049 Sokak No:26 Gümüşkoy Urla/İZMİR</h1><br>
+			<h2>
+			<b>E-Mail :</b> info@susuhostel.esy.es</h2><br>
+			<h3>
+			<b>Tel :</b> 0232 123 4567</h3><br>
+			<h4>
+			<b>Reservation :</b> 0532 123 4567</h4><br>
+		</div>
+		
+	
+</body>
+</html>
+

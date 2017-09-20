@@ -1,0 +1,13 @@
+#googlemap {float: left; margin-top:10px; margin-bottom:10px; 
+margin-left:60px; margin-right:50px;}
+
+p{
+	color : #85011F;
+	font-size : 24px;
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+	font-size:120%;
+	font-weight:normal;
+	color: #f8f8f8;
+}

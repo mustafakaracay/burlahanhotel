@@ -1,0 +1,36 @@
+#single {float: left; margin-top:10px; margin-bottom:10px; 
+	margin-left:60px; margin-right:50px;
+    width: 700px;}
+	
+#single img {
+    width: 100%;
+    height: auto;
+}
+
+#double {float: left; margin-top:10px; margin-bottom:10px; 
+	margin-left:60px; margin-right:50px;
+    width: 700px;}
+	
+#double img {
+    width: 100%;
+    height: auto;
+}
+
+#suite {float: left; margin-top:10px; margin-bottom:10px; 
+	margin-left:60px; margin-right:50px;
+    width: 700px;}
+	
+#suite img {
+    width: 100%;
+    height: auto;
+}
+
+
+#inner {margin-right: 10px; padding-right: 35px; margin-top:15px;}
+
+h1,h2,h3,h4,h5,h6,h7{
+	font-size:120%;
+	font-weight:normal;
+	color: #f8f8f8;
+}
+
